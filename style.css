@@ -1,0 +1,237 @@
+/* Reset some default browser styles */
+body, h3, p, ul, li, ol, dl, dt, dd, section, footer, header, nav, main {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    box-sizing: border-box;
+}
+
+
+dd {
+    margin-bottom: 3px;
+}
+
+/* Basic body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #c4eafb, #c3e0ff, #d7d2ff);
+    background-size: cover;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+header h1 {
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Navigation styles */
+
+nav {
+    margin: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    background: rgba(85, 85, 85, 0.8);
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* Download button styles */
+.download {
+    margin-top: 20px;
+}
+
+.download-btn {
+    background: #6a5acd;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+a.download-btn {
+    justify-self: center;
+}
+
+.download-btn:hover {
+    background: #3f357b;
+}
+
+/* Main content styles */
+main {
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 850px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p, li, dd {
+    margin-bottom: 10px;
+}
+
+/* Ordered list styles */
+ol {
+    margin-left: 20px;
+}
+
+ol li {
+    margin-bottom: 30px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgb(68 68 68 / 16%);
+    color: #333;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+/* Responsive s
+tyles */
+@media (max-width: 450px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+        max-width: 600px;
+    }
+
+    /* .download-btn {
+        width: 100%;
+    } */
+}
+
+img.step-image {
+    width: 50%; /* Default to full width on small screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners to images */
+}
+
+/* Medium screens (tablets, large phones, etc.) */
+@media (min-width: 668px) {
+    img.step-image {
+        max-width: 35%; /* Reduce size on medium screens */
+    }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 924px) {
+    img.step-image {
+        max-width: 20%; /* Further reduce size on large screens */
+    }
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0 20px;
+}
+
+.auth-btn {
+    background: #6a5acd;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.auth-btn:hover {
+    background: #3f357b;
+    color: #fff;
+}
+
+.or-text {
+    font-size: 1.4rem;
+    line-height: 1.42857;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0 12px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin: 20px 0;
+}
+
+.separator .side {
+    border: 1px solid #666;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.separator span {
+    color: #666;
+    font-size: 1rem;
+}
